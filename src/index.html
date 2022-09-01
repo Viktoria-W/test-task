@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title":"Test task"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html', {})
+        <main class="main" id="main">
+
+            <section class="main__banner banner">
+                <div class="banner__container container">
+                    <div class="banner__slider slider">
+                        <div class="slider__arrow-block">
+                            <button type="button" class="banner__arrow arrow-left"></button>
+                            <button type="button" class="banner__arrow arrow-right"></button>
+                        </div>
+                        <div class="slider__inner">
+                            <div class="slider__slide">
+                                <h1 class="banner__title main__title">H1 text</h1>
+                                <div class="slider__button-block">
+                                    <a href="#pop-up" class="main__pop-up pop-up-button">Open pop-up button</a>
+                                </div>
+                            </div>
+                            <div class="slider__slide">
+                                <h1 class="banner__title main__title">Another H1 text</h1>
+                                <div class="slider__button-block">
+                                    <a href="#pop-up" class="main__pop-up pop-up-button">Open pop-up button</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__grid grid">
+                <div class="grid__container container">
+                    <h2 class="grid__title title">H2 text</h2>
+                    <div class="grid__wrapper">
+                        <div class="grid__item"></div>
+                        <div class="grid__item"></div>
+                        <div class="grid__item"></div>
+                        <div class="grid__item"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__navigation navigation">
+                <h2 class="navigation__title title">H2 text</h2>
+                <div class="navigation__wrapper">
+                    <ul class="navigation__list list__container container">
+                        <li class="navigation__item text">Text</li>
+                        <li class="navigation__item text">Text</li>
+                        <li class="navigation__item text">Text</li>
+                        <li class="navigation__item text">Text</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="main__blocks blocks">
+                <div class="blocks__container container">
+                    <h2 class="block__title title">H2 text</h2>
+                    <div class="blocks__inner">
+                        <div class="blocks__item shadow"></div>
+                        <div class="blocks__item"></div>
+                        <div class="blocks__item"></div>
+                        <div class="blocks__item"></div>
+                        <div class="blocks__item"></div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="main__popup popup" id="pop-up">
+                <div class="popup__shadow">
+                    <div class="popup__container">
+                        <a href="#" class="popup__close-button">X</a>
+                        <p class="popup__text">Pop-up</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        @@include('html/footer.html', {})
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

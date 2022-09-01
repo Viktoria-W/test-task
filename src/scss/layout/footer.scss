@@ -1,0 +1,21 @@
+.footer {
+
+    &__container {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 9px;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 45px;
+    }
+
+    &__button-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+

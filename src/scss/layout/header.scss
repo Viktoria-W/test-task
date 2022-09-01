@@ -1,0 +1,143 @@
+.header {
+    background-color: #B47FF6;
+
+    &__flex-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 48px 0px 40px;
+    }
+
+    &__burger-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    &__pop-up {
+        box-shadow: 2px 5px 10px #497957;
+    }
+
+    &__pop-up-button {
+        margin-top: 55px;
+    }
+}
+.nav {
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-right: 60px;
+        }
+    }
+}
+.active {
+    text-decoration: underline;
+}
+.main-button {
+    display: none;
+}
+.pop-up-button {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    background-color: #FF4B4B;
+    padding: 15px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.burger {
+    position: relative;
+
+    & span, &::before, &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 43px;
+        height: 3px;
+        background-color: #ffffff;
+        transition: 0.3s;
+    }
+
+    &::before {
+        top: -9px;
+    }
+
+    &::after {
+        top: 9px;
+    }
+}
+.open-burger {
+    & span {
+        background-color: inherit;
+    }
+
+    &::before {
+        top: 0;
+        transform: rotate(45deg);
+        transition: 0.3s;
+    } 
+    
+    &::after {
+        top: 0;
+        transform: rotate(-45deg);
+        transition: 0.3s;
+    }
+}
+.hidden {
+    display: none;
+}
+.menu {
+    background-color: #A6C9FF;
+
+    &__list {
+        padding: 33px 64px 57px 64px;
+    }
+
+    &__item {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 45px;
+
+        &:not(:last-child) {
+            margin-bottom: 39px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        &__flex-wrapper {
+            flex-direction: column;
+        }
+
+        &__nav {
+            margin-bottom: 40px;
+        }
+
+        &__burger {
+            order: -1;
+            margin: 20px;
+        }
+    }
+
+    .nav {
+        &__list {
+            flex-direction: column;
+        }
+
+        &__item {
+            margin: 20px;
+        }
+    }
+}

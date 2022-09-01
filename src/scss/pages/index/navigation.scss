@@ -1,0 +1,25 @@
+.navigation {
+
+    &__title {
+        text-align: center;
+        margin: 40px 0px;
+    }
+
+    &__wrapper {
+        background-color: #D87FF6;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        min-height: 100px;
+    }
+
+    &__item {
+        padding: 27px 10px;
+    }
+}
+
+
